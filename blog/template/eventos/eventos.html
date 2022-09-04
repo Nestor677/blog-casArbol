@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+{% for even in evento %}
+<div class="container">
+    <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading #e3f2fd blue lighten-5 center" >{{even.nombre}}</h2>
+      <p class="lead">{{even.tema}}</p>
+      <p class="lead">{{even.texto}}</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{{eventos.img.url}}" alt="">
+    </div>
+    
+  </div>
+
+  <hr class="featurette-divider">
+</div>
+
+{% endfor %}
+{% endblock %}

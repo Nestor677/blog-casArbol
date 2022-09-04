@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+ <!-- Slider-->
+ <section class="container section slider">
+    <div class="carousel carousel-slides center" >
+       
+        <div class="carousel-item  white-text" href="#one!">
+            <img src="{% static 'img/fotoGrupal.jpg' %}" alt="">
+            <h2>Fiesta</h2>
+            <p class="white-text">Actividad con propósito</p>
+        </div>
+        <div class="carousel-item  white-text" href="#two!">
+            <img src="{% static 'img/almuerzo.jpg' %}" alt="">
+          <h2>Almuerzo</h2>
+          <p class="white-text">Uno de los menú de dada día</p>
+        </div>
+        <div class="carousel-item  white-text" href="#three!">
+            <img src="{% static 'img/apoyoescolar.jpg' %}" alt="">
+          <h2>Educación</h2>
+          <p class="white-text">Apoyo escolar</p>
+        </div>
+        <div class="carousel-item  white-text" href="#four!">
+            <img src="{% static 'img/huerta-niña.jpg' %}" alt="">
+          <h2>Huerta</h2>
+          <p class="white-text">Proyecto de huerta comunitaria</p>
+        </div>
+        <div class="carousel-item  white-text" href="#four!">
+          <img src="{% static 'img/cierreaño.jpg' %}" alt="">
+        <h2>Fiesta</h2>
+        <p class="white-text">Despedida de año con invitados</p>
+      </div>
+      </div>
+</section>
+
+
+<main>
+<div class="container">
+<div class="section">
+
+  <div class="row">
+    <div class="">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"></i></h2>
+        <h5 class="center #e3f2fd blue lighten-5">Quiénes somos</h5>
+
+        <p class="light">El comedor y merendero "La Casita del Árbol es una familia grande,
+             donde compartimos diariamente alegrías, juegos, risas y también tristezas, pero sobre todo 
+             somos un grupo de personas comprometidas que dedicamos gran parte de nuestros tiempo a 
+             mejorar o intentar mejorar la calidad de vida de muchos niños.
+            
+            Hace 5 años, tomamos la iniciativa de servir la merienda a los chicos de nuestro barrio
+             ya que veíamos la gran necesidad que nos rodeaba. Comenzamos sirviendo la merienda una vez a
+              la semana a alrededor de 30 chicos del barrio, luego la cantidad de niños fue aumentando, 
+              nos vimos obligados a aumentar la cantidad de dias de merienda, lo que hoy nos lleva a contarte 
+              que servimos almuerzo y merienda de lunes a sábado a mas de 60 niños, de este barrio y también de
+               barrios aledaños.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+<br><br>
+</div>
+</main>
+
+{% endblock %}
