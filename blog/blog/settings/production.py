@@ -1,6 +1,6 @@
 from .base import *
 import dajango_heroku
-
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -9,6 +9,10 @@ DEBUG = False
 DEBUG_PROPAGATE_EXCEPTIONS = True
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
+DATABASES = {
+    'default' : dj_database_url.config(default=config('DATABASE_URL'))
+}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_pyscopg2',
@@ -19,6 +23,8 @@ DATABASES = {
         'PORT':'5432',
     }
 }
+'''
+
 
 db_from_env= dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
